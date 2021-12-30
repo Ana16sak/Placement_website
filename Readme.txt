@@ -14,6 +14,8 @@ PHASE 3
 1. Talent board
 2. Registration Portal
 
+
+---
 Template Name: Moderna
 Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
 Author: BootstrapMade.com
