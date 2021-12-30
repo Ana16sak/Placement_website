@@ -68,22 +68,22 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: #1e4356;
 }
 #header.header-transparent {
-  background: rgba(30, 67, 86,1.0);
+  background: rgba(183, 16, 6,1.0);
 }
 #header.header-scrolled {
-  background: rgba(30, 67, 86, 1.0);
+  background: rgba(183, 16, 6, 1.0);
   height: 60px;
 }
 #header .logo h1 {
-  font-size: 20px;
+  font-size: 23px;
   margin: 0;
   padding: 4px 0;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-weight: 500;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.952);
   text-decoration: none;
 }
 #header .logo img {
@@ -514,13 +514,15 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background-color: #f3f8fa;
+  background-color: #f1ba55ad;
   min-height: 40px;
 }
 .breadcrumbs h2 {
   font-size: 28px;
-  font-weight: 300;
-}
+  font-weight: 400;
+  
+  
+} 
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -534,8 +536,12 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #6c757d;
+  color: #000000;
   content: "/";
+}
+.breadcrumbs a {
+  text-decoration: none;
+  color: #000000;
 }
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
@@ -1320,7 +1326,7 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 17px;
   margin-bottom: 0;
 }
 .contact .php-email-form {
