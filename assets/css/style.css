@@ -467,12 +467,13 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background-color: #f1ba55ad;
+  background-color: #ffce74;
   min-height: 40px;
 }
 .breadcrumbs h2 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 400;
+  color: #444444;
   
   
 } 
@@ -944,7 +945,7 @@ section {
   transition: 0.3s;
 }
 .service-details .read-more a:hover {
-  color: #68A4C4;
+  color: #119ae4;
 }
 .service-details .card:hover img {
   transform: scale(1.1);
@@ -1433,7 +1434,8 @@ section {
   line-height: 1;
 }
 .blog .entry .entry-content p {
-  line-height: 24px;
+  line-height: 30px;
+  color: #535353;
 }
 .blog .entry .entry-content .read-more {
   -moz-text-align-last: right;
@@ -1441,14 +1443,14 @@ section {
 }
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #68A4C4;
+  background: #b71006;
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
   font-size: 14px;
 }
 .blog .entry .entry-content .read-more a:hover {
-  background: #7aafcb;
+  background: #da2a27;
 }
 .blog .entry .entry-content h3 {
   font-size: 22px;

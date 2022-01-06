@@ -53,12 +53,17 @@
           <li><a href="index.html">Home</a></li>
           
           
-          <li><a class="active" href="our-students.html">Our Students</a></li>
-          <li><a href="curriculum.html">Curriculum</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="our-students.html">Our Students</a></li>
+          <li><a class='active'href="curriculum.html">Curriculum</a></li>
+          <!-- <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="team.html">Team</a></li> -->
           <li><a href="achievements.html">Acheivements</a></li>
-          
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </li>
               
 
           <li><a href="contact.html">Contact Us</a></li>
@@ -85,7 +90,174 @@
 
       </div>
     </section><!-- End Our Services Section -->
-
+    <!-- Venn diagram -->
+    <!-- CSS -->
+    <style>body {
+      color: #858585;
+      font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
+    }
+    
+    #web {
+      background: #fff url('http://wp.ewsproduction.com/elliott/wp-content/themes/memorable/images/home-section-bg.png') bottom center repeat-x; 
+      width: 1519px; 
+      height: 960px; 
+      position: relative; 
+    }
+    
+    #center-sphere { 
+      width: 275px; 
+      height: 275px; 
+      position: absolute; 
+      left: 600px; 
+      top: 342px; 
+    }
+    
+    .sphere { 
+      width: 175px; 
+      height: 175px; 
+      border-radius: 50%;
+      position: absolute; 
+      /* border: 2px rgb(115,166,183) solid; */
+      border-radius: 50%;
+      box-shadow: 1 1 0 3px rgba(103, 167, 187, 0.171);
+      transition: background-color 800ms ease-in-out;
+      background: rgba(125,184,214, .2);
+       transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms ;
+      -moz-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
+      -ms-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
+      -o-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
+      -webkit-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
+    }
+    
+    .sphere:hover {
+      transition: background-color 800ms ease-in-out;
+      background: rgb(115,166,183);
+      color: #ffffff;
+      z-index: 999;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      width: 315px; 
+      height: 315px;
+    }
+    
+    .one{left: 1200px; top: 405px;}
+    .two{left: 1100px; top: 523px;}
+    .three{left: 955px; top: 600px;}
+    .four{left: 800px; top: 620px;}
+    .five{left: 125px; top: 400px;}
+    .six{left: 215px; top: 275px;}
+    .seven{left: 320px; top: 175px;}
+    .eight{left: 475px; top: 125px;}
+    .nine{left: 630px; top: 110px;}
+    .ten{left: 775px; top: 125px;}
+    
+    .text {
+       -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      top: 65px;
+      left: 45px;
+    }
+    
+    .sphere:hover .text {
+      top: 20px;
+      left: 125px;
+    }
+    
+    .sphere:hover .muscles{
+      top: 20px;
+      left: 82px;
+    }
+    
+    .blurb {
+      margin: 2.5em;
+      color: rgba(255,255,255,0);
+      -ms-transform: scale(.9); 
+      -webkit-transform: scale(.9); 
+      transform: scale(.9);
+      visibility: hidden;
+    }
+    
+    .sphere:hover .blurb {
+       -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out;
+      color: rgba(255,255,255,1);
+      visibility: visible;
+    }
+    
+    .muscles {
+      top: 70px;
+      left: 20px;
+    }
+    
+    .title {
+       position: relative;
+       top: 65px;
+       left: 55px;
+    }
+    .description {
+       position: relative;
+       top: 65px;
+       left: 25px;
+    }</style>
+    <!-- end css -->
+    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+    <div id="web">
+      <div id="center-sphere">
+        <h1 class="title">Curriculum</h1>
+        <p class="description">Not just Knowledge but devolopment</p>
+      </div> 
+      <div class="sphere one" >
+        <span class="text health">GI Health</span>
+        <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+      </div>
+      <div class="sphere two" >
+        <span class="text spiritual">Spiritual</span>
+         <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+      </div>
+      <div class="sphere three" >
+        <span class="text emotion">Emotions</span>
+         <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+      </div>
+      <div class="sphere four" >
+        <span class="text lifestyle">Lifestyle</span>
+         <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx.</p>
+      </div>
+      <div class="sphere five" >
+        <span class="text hormone">Hormones</span>
+         <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+      </div>
+      <div class="sphere six" >
+        <span class="text immune">Immunity</span>
+         <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+      </div>
+      <div class="sphere seven" >
+        <span class="text muscles">Musculoskeletal</span>
+         <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+      </div>
+      <div class="sphere eight" >
+        <span class="text genes">Genes</span>
+         <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+      </div>
+      <div class="sphere nine" >
+        <span class="text toxin">Toxins</span>
+         <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+      </div>
+       <div class="sphere ten">
+        <span class="text nutrient">Nutrients</span>
+          <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+      </div>
+  </div>
+</div>
     <!-- ======= Services Section ======= -->
     <section class="services">
       <div class="container">
