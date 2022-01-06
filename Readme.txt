@@ -14,6 +14,9 @@ PHASE 3
 1. Talent board
 2. Registration Portal
 
+Changes (SAV)
+1. Logo to student body
+
 xxxxx
 ---
 Template Name: Moderna
