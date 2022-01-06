@@ -460,6 +460,7 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
+  font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------------
@@ -865,7 +866,7 @@ a.expert-action:hover {
   transition: all 0.3s ease-in-out;
   width: 100%;
   height: 100%;
-  
+
 }
 
 .service-details .card-img-head img {
@@ -927,98 +928,104 @@ a.expert-action:hover {
 }
 
 /*--------------------------------------------------------------
-# Pricing
+# Courses
 --------------------------------------------------------------*/
-.pricing .row {
+.courses .row {
   padding-top: 40px;
 }
-.pricing .box {
+.courses .box {
   padding: 40px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
   background: #fff;
-  text-align: center;
+  /* text-align: center; */
 }
-.pricing h3 {
-  font-weight: 300;
+.courses h3 {
+  font-weight: 500;
   margin-bottom: 15px;
   font-size: 28px;
 }
-.pricing h4 {
+
+.courses h6 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+}
+.courses h4 {
   font-size: 46px;
   color: #68A4C4;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 25px;
 }
-.pricing h4 span {
+.courses h4 span {
   color: #bababa;
   font-size: 18px;
   display: block;
 }
-.pricing ul {
+.courses ul {
   padding: 0;
   list-style: none;
   color: #999;
   text-align: left;
   line-height: 20px;
 }
-.pricing ul li {
+.courses ul li {
   padding-bottom: 12px;
 }
-.pricing ul i {
+.courses ul i {
   color: #68A4C4;
   font-size: 18px;
   padding-right: 4px;
 }
-.pricing ul .na {
+.courses ul .na {
   color: #ccc;
 }
-.pricing ul .na i {
+.courses ul .na i {
   color: #ccc;
 }
-.pricing ul .na span {
+.courses ul .na span {
   text-decoration: line-through;
 }
-.pricing .get-started-btn {
-  background: #1e4356;
+.courses .get-started-btn {
+  background: #b71006;
   display: inline-block;
   padding: 6px 30px;
   border-radius: 20px;
   color: #fff;
   transition: none;
   font-size: 14px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   transition: 0.3s;
 }
-.pricing .get-started-btn:hover {
-  background: #68A4C4;
+.courses .get-started-btn:hover {
+  background: #f88949;
 }
-.pricing .featured {
+.courses .featured {
   z-index: 10;
   margin: -30px -5px 0 -5px;
 }
-.pricing .featured .get-started-btn {
-  background: #68A4C4;
+.courses .featured .get-started-btn {
+  background: #f88949;
 }
-.pricing .featured .get-started-btn:hover {
-  background: #85b6cf;
+.courses .featured .get-started-btn:hover {
+  background: #f88949;
 }
 @media (max-width: 992px) {
-  .pricing .box {
+  .courses .box {
     max-width: 60%;
     margin: 0 auto 30px auto;
   }
 }
 @media (max-width: 767px) {
-  .pricing .box {
+  .courses .box {
     max-width: 80%;
     margin: 0 auto 30px auto;
   }
 }
 @media (max-width: 420px) {
-  .pricing .box {
+  .courses .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
   }
