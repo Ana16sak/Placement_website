@@ -474,6 +474,8 @@ section {
   font-size: 22px;
   font-weight: 400;
   color: #444444;
+ 
+  margin: 0;
   
   
 } 
@@ -861,7 +863,17 @@ a.expert-action:hover {
 .service-details .card-img img {
   max-width: 100%;
   transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  
 }
+
+.service-details .card-img-head img {
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+  filter: blur(2px);
+}
+
 .service-details .card-body {
   z-index: 10;
   background: #fff;
@@ -871,6 +883,17 @@ a.expert-action:hover {
   margin-top: -60px;
   transition: 0.3s;
 }
+
+.service-details .card-body-head {
+  z-index: 10;
+  background: #fff;
+  border-top: 4px solid #fff;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -194px;
+  transition: 0.3s;
+}
+
 .service-details .card-title {
   font-weight: 700;
   text-align: center;
@@ -897,7 +920,7 @@ a.expert-action:hover {
   transform: scale(1.1);
 }
 .service-details .card:hover .card-body {
-  border-color: #68A4C4;
+  border-color: #b71006;
 }
 .service-details .card:hover .card-body .card-title a {
   color: #68A4C4;
