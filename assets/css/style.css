@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(to right, rgba(218,42,39,0.6),rgba(213,165,78,1.0) ), url("../img/gajendracircle.jpg") center ;display: block;)
+  background: linear-gradient(to right, rgba(218,42,39,0.6),rgba(213,165,78,1.0) ), url("../img/gajendracircle.jpg") center ;display: block;;
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
@@ -432,7 +432,7 @@ section {
   padding-bottom: 30px;
 }
 .section-title h2 {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -460,6 +460,7 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
+  font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------------
@@ -474,6 +475,8 @@ section {
   font-size: 22px;
   font-weight: 400;
   color: #444444;
+ 
+  margin: 0;
   
   
 } 
@@ -512,10 +515,10 @@ section {
 /*--------------------------------------------------------------
 # Our Services
 --------------------------------------------------------------*/
-.services {
+.why-iitm {
   padding-bottom: 20px;
 }
-.services .icon-box {
+.why-iitm .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -526,7 +529,7 @@ section {
   text-align: center;
   border: 1px solid #fff;
 }
-.services .icon {
+.why-iitm .icon {
   margin: 0 auto 20px auto;
   padding-top: 17px;
   display: inline-block;
@@ -535,57 +538,57 @@ section {
   width: 72px;
   height: 72px;
 }
-.services .icon i {
+.why-iitm .icon i {
   font-size: 36px;
   line-height: 1;
 }
-.services .title {
+.why-iitm .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
-.services .title a {
+.why-iitm .title a {
   color: #111;
 }
-.services .description {
+.why-iitm .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
-.services .icon-box-pink .icon {
+.why-iitm .icon-box-pink .icon {
   background: #fceef3;
 }
-.services .icon-box-pink .icon i {
+.why-iitm .icon-box-pink .icon i {
   color: #ff689b;
 }
-.services .icon-box-pink:hover {
+.why-iitm .icon-box-pink:hover {
   border-color: #ff689b;
 }
-.services .icon-box-cyan .icon {
+.why-iitm .icon-box-cyan .icon {
   background: #e6fdfc;
 }
-.services .icon-box-cyan .icon i {
+.why-iitm .icon-box-cyan .icon i {
   color: #3fcdc7;
 }
-.services .icon-box-cyan:hover {
+.why-iitm .icon-box-cyan:hover {
   border-color: #3fcdc7;
 }
-.services .icon-box-green .icon {
+.why-iitm .icon-box-green .icon {
   background: #eafde7;
 }
-.services .icon-box-green .icon i {
+.why-iitm .icon-box-green .icon i {
   color: #41cf2e;
 }
-.services .icon-box-green:hover {
+.why-iitm .icon-box-green:hover {
   border-color: #41cf2e;
 }
-.services .icon-box-blue .icon {
+.why-iitm .icon-box-blue .icon {
   background: #e1eeff;
 }
-.services .icon-box-blue .icon i {
+.why-iitm .icon-box-blue .icon i {
   color: #2282ff;
 }
-.services .icon-box-blue:hover {
+.why-iitm .icon-box-blue:hover {
   border-color: #2282ff;
 }
 
@@ -597,13 +600,15 @@ section {
   background: #fff;
 }
 
-}
+
 .dir-msg .image-box {
   position: relative;
 }
 .dir-msg .image-box img {
   position: relative;
-  padding: 5px
+  padding: 5px;
+  vertical-align: middle;
+  
  /* transform: translate(22px,44px) */
 ;
 }
@@ -725,6 +730,11 @@ a.expert-action:hover {
   margin-bottom: 0;
 }
 
+.about .row {
+  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+  background: #fff;
+}
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -736,7 +746,6 @@ a.expert-action:hover {
 .stats .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
@@ -855,7 +864,17 @@ a.expert-action:hover {
 .service-details .card-img img {
   max-width: 100%;
   transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+
 }
+
+.service-details .card-img-head img {
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+  filter: blur(2px);
+}
+
 .service-details .card-body {
   z-index: 10;
   background: #fff;
@@ -865,6 +884,17 @@ a.expert-action:hover {
   margin-top: -60px;
   transition: 0.3s;
 }
+
+.service-details .card-body-head {
+  z-index: 10;
+  background: #fff;
+  border-top: 4px solid #fff;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -194px;
+  transition: 0.3s;
+}
+
 .service-details .card-title {
   font-weight: 700;
   text-align: center;
@@ -891,105 +921,111 @@ a.expert-action:hover {
   transform: scale(1.1);
 }
 .service-details .card:hover .card-body {
-  border-color: #68A4C4;
+  border-color: #b71006;
 }
 .service-details .card:hover .card-body .card-title a {
   color: #68A4C4;
 }
 
 /*--------------------------------------------------------------
-# Pricing
+# Courses
 --------------------------------------------------------------*/
-.pricing .row {
+.courses .row {
   padding-top: 40px;
 }
-.pricing .box {
+.courses .box {
   padding: 40px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
   background: #fff;
-  text-align: center;
+  /* text-align: center; */
 }
-.pricing h3 {
-  font-weight: 300;
+.courses h3 {
+  font-weight: 500;
   margin-bottom: 15px;
   font-size: 28px;
 }
-.pricing h4 {
+
+.courses h6 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+}
+.courses h4 {
   font-size: 46px;
   color: #68A4C4;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 25px;
 }
-.pricing h4 span {
+.courses h4 span {
   color: #bababa;
   font-size: 18px;
   display: block;
 }
-.pricing ul {
+.courses ul {
   padding: 0;
   list-style: none;
   color: #999;
   text-align: left;
   line-height: 20px;
 }
-.pricing ul li {
+.courses ul li {
   padding-bottom: 12px;
 }
-.pricing ul i {
+.courses ul i {
   color: #68A4C4;
   font-size: 18px;
   padding-right: 4px;
 }
-.pricing ul .na {
+.courses ul .na {
   color: #ccc;
 }
-.pricing ul .na i {
+.courses ul .na i {
   color: #ccc;
 }
-.pricing ul .na span {
+.courses ul .na span {
   text-decoration: line-through;
 }
-.pricing .get-started-btn {
-  background: #1e4356;
+.courses .get-started-btn {
+  background: #b71006;
   display: inline-block;
   padding: 6px 30px;
   border-radius: 20px;
   color: #fff;
   transition: none;
   font-size: 14px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   transition: 0.3s;
 }
-.pricing .get-started-btn:hover {
-  background: #68A4C4;
+.courses .get-started-btn:hover {
+  background: #f88949;
 }
-.pricing .featured {
+.courses .featured {
   z-index: 10;
   margin: -30px -5px 0 -5px;
 }
-.pricing .featured .get-started-btn {
-  background: #68A4C4;
+.courses .featured .get-started-btn {
+  background: #f88949;
 }
-.pricing .featured .get-started-btn:hover {
-  background: #85b6cf;
+.courses .featured .get-started-btn:hover {
+  background: #f88949;
 }
 @media (max-width: 992px) {
-  .pricing .box {
+  .courses .box {
     max-width: 60%;
     margin: 0 auto 30px auto;
   }
 }
 @media (max-width: 767px) {
-  .pricing .box {
+  .courses .box {
     max-width: 80%;
     margin: 0 auto 30px auto;
   }
 }
 @media (max-width: 420px) {
-  .pricing .box {
+  .courses .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
   }
@@ -1886,127 +1922,3 @@ a.expert-action:hover {
 #footer .credits a {
   color: #a2cce3;
 }
-
-
-/*CSS for sphere*/
-
-
-
-#web {
-  max-width: 100%; 
-  height: 960px; 
-  position: relative; 
-}
-
-#center-sphere { 
-  width: 275px; 
-  height: 275px; 
-  position: absolute; 
-  left: 450px; 
-  top: 342px; 
-}
-
-.sphere { 
-  width: 175px; 
-  height: 175px; 
-  border-radius: 50%;
-  position: absolute; 
-  /* border: 2px rgb(115,166,183) solid; */
-  border-radius: 50%;
-  box-shadow: 1 1 0 3px rgba(103, 167, 187, 0.171);
-  transition: background-color 800ms ease-in-out;
-  background: rgba(125,184,214, .2);
-   transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms ;
-  -moz-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
-  -ms-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
-  -o-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
-  -webkit-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
-}
-
-.sphere:hover {
-  transition: background-color 800ms ease-in-out;
-  background: rgb(115,166,183);
-  color: #ffffff;
-  z-index: 999;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  width: 315px; 
-  height: 315px;
-}
-
-.one{left: 1000px; top: 405px;}
-.two{left: 920px; top: 523px;}
-.three{left: 795px; top: 600px;}
-.four{left: 650px; top: 620px;}
-.five{left: 75px; top: 400px;}
-.six{left: 150px; top: 275px;}
-.seven{left: 260px; top: 175px;}
-.eight{left: 395px; top: 125px;}
-.nine{left: 530px; top: 110px;}
-.ten{left: 675px; top: 125px;}
-
-.text {
-   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-  top: 65px;
-  left: 45px;
-}
-
-.sphere:hover .text {
-  top: 20px;
-  left: 125px;
-}
-
-.sphere:hover .muscles{
-  top: 20px;
-  left: 82px;
-}
-
-.blurb {
-  margin: 2.5em;
-  color: rgba(255,255,255,0);
-  -ms-transform: scale(.9); 
-  -webkit-transform: scale(.9); 
-  transform: scale(.9);
-  visibility: hidden;
-}
-
-.sphere:hover .blurb {
-   -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  -ms-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-  color: rgba(255,255,255,1);
-  visibility: visible;
-}
-
-.muscles {
-  top: 70px;
-  left: 20px;
-}
-
-#center {
-margin: auto;
-width: 50%;
-border: 3px solid green;
-padding: 10px;
-}
-
-.title {
-   position: relative;
-   top: 65px;
-   left: 55px;
-}
-.description {
-   position: relative;
-   top: 65px;
-   left: 25px;
-}</style>
