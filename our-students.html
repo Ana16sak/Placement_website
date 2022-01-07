@@ -36,6 +36,84 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    
+     
+ 
+    .b-skills
+    {
+      border-top: 1px solid #f9f9f9;
+      padding-top: 46px;
+      text-align: center;
+    }
+    
+    .b-skills:last-child { margin-bottom: -30px; }
+    
+    .b-skills h2 { margin-bottom: 50px; font-weight: 900; text-transform: uppercase;}
+    
+    .skill-item
+    {
+      position: relative;
+      max-width: 250px;
+      width: 100%;
+      margin-bottom: 30px;
+      color: #555;
+    }
+    
+    .chart-container
+    {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 100%;
+      margin-bottom: 27px;
+    }
+    
+    .skill-item .chart,
+    .skill-item .chart canvas
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    
+    .skill-item .chart:before
+    {
+      content: "";
+      width: 0;
+      height: 100%;
+    }
+    
+    .skill-item .chart:before,
+    .skill-item .percent
+    {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    .skill-item .percent
+    {
+      position: relative;
+      line-height: 1;
+      font-size: 40px;
+      font-weight: 900;
+      z-index: 2;
+    }
+    
+    .skill-item  .percent:after
+    {
+      content: attr(data-after);
+      font-size: 20px;
+    }
+           
+           p{
+               font-weight: 900;
+           }
+     
+        
+        </style>
 
 </head>
 
@@ -169,7 +247,7 @@
         <div class="skills-content">
 
           <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="452">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="452">
               <span class="skill">Engineering <i class="val">69%</i></span>
 
             </div>
@@ -202,7 +280,132 @@
       </div>
     </section><!-- End Our Skills Section -->
      
+    <section id="s-team" class="section">
+			 
+			<br><br><br>
+
+			<div class="b-skills">
+        <div class="section-title">
+          <h2>Age distribution of our learners</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="56.9" data-bar-color="#23afe3">
+										<span class="percent" data-after="%">57</span>
+									</div>
+								</div>
+
+								<p>< 21 years</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="37" data-bar-color="#a7d212">
+										<span class="percent" data-after="%">37</span>
+									</div>
+								</div>
+
+								<p>21 - 30 years</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="5" data-bar-color="#ff4241">
+										<span class="percent" data-after="%">5</span>
+									</div>
+								</div>
+
+								<p>31 - 40 years</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="1" data-bar-color="#edc214">
+										<span class="percent" data-after="%">1</span>
+									</div>
+								</div>
+
+								<p>41 - 50 years</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <br><br><br><br><br>
+    
+ 
+ 
+  <br><br><br><br>  
   
+  
+  
+ <script src="assets/js/jquery-2.2.4.min.js"></script>
+ <script src="assets/js/jquery.appear.min.js"></script>
+ <script src="assets/js/jquery.easypiechart.min.js"></script> 
+ <script>
+    'use strict';
+
+var $window = $(window);
+
+function run()
+{
+	var fName = arguments[0],
+		aArgs = Array.prototype.slice.call(arguments, 1);
+	try {
+		fName.apply(window, aArgs);
+	} catch(err) {
+		 
+	}
+};
+ 
+/* chart
+================================================== */
+function _chart ()
+{
+	$('.b-skills').appear(function() {
+		setTimeout(function() {
+			$('.chart').easyPieChart({
+				easing: 'easeOutElastic',
+				delay: 3000,
+				barColor: '#369670',
+				trackColor: '#fff',
+				scaleColor: false,
+				lineWidth: 21,
+				trackWidth: 21,
+				size: 250,
+				lineCap: 'round',
+				onStep: function(from, to, percent) {
+					this.el.children[0].innerHTML = Math.round(percent);
+				}
+			});
+		}, 150);
+	});
+};
+ 
+
+$(document).ready(function() {
+  
+	run(_chart);
+  
+    
+});
+
+
+    
+    </script>
     
 
   </main><!-- End #main -->
