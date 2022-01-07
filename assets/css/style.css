@@ -432,7 +432,7 @@ section {
   padding-bottom: 30px;
 }
 .section-title h2 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -460,7 +460,7 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
-  font-size: 1.2rem;
+  font-sizerem;
 }
 
 /*--------------------------------------------------------------
@@ -683,6 +683,12 @@ a.expert-action:hover {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.highlights{
+  padding: 25px;;
+  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+  background: #fff;
+  text-align: left;
+}
 .features .row + .row {
   margin-top: 100px;
 }
