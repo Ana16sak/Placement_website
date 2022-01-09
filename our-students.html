@@ -108,9 +108,9 @@
       font-size: 20px;
     }
            
-           p{
+           /* p{
                font-weight: 900;
-           }
+           } */
      
         
         </style>
@@ -172,17 +172,19 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
+          </div> -->
+          <!-- <div class="col-lg-6 pt-4 pt-lg-0"> -->
+            <div>
             <br>
             <br>
-            <h3 style="color: #4fa6d5;">Our Strength</h3>
+            <h3 style="color: #4fa6d5;">Cohort ready for Internships in September 2022</h3>
             <hr>
             <p class="fst-italic">
-              We have a cohort of over 650 talented students who have completed double diplomas in Programming and Data Sciences and will be taking up 3-6 months long internships starting September 2022. About 100 students from the cohort are working professionals and most students have dual degrees and therefore bring strong domain knowledge in various fields.
+              We have a cohort of over 655 talented students who have completed double diplomas in Programming and Data Sciences and will be taking up 3-6 months long internships starting September 2022. About 100 students from the cohort are working professionals and most students have dual degrees and therefore bring strong domain knowledge in various fields.
             </p>
+            <br>
             <!-- <ul>
               <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="bi bi-check2-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
@@ -346,9 +348,22 @@
 		</section>
         <br><br><br><br><br>
     
+        
+
+
+        <!-- experiment DONUTCHART-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div class="container d-flex justify-container-center">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="donutchart" style="width: 900px; height: 400px;"></div>
+        </div>
+    </div>
+</div>
+<!-- end -->
  
  
-  <br><br><br><br>  
+  <br><br> 
   
   
   
@@ -483,6 +498,32 @@ $(document).ready(function() {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- experiment -->
+  <script>$(document).ready(function(){
+
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+    ['CGPA', 'No. of Students'],
+    ['9-10 CGPA', 29],
+    ['8-9 CGPA', 45],
+    ['7-8 CGPA', 22],
+    ['Below 7 CGPA', 4],
+    ]);
+    
+    var options = {
+    title: 'CGPA-wise Distribution',
+    pieHole: 0.4,
+    };
+    
+    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+    chart.draw(data, options);
+    }
+    
+    });</script>
+    <!-- end -->
 
  
 </script>
