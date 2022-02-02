@@ -2,121 +2,18 @@
 <html lang="en">
 
 <head>
-  <style>/* reset */
-    #fs-frm input,
-    #fs-frm select,
-    #fs-frm textarea,
-    #fs-frm fieldset,
-    #fs-frm optgroup,
-    #fs-frm label,
-    #fs-frm #card-element:disabled {
-      font-family: inherit;
-      font-size: 100%;
-      color: inherit;
-      border: none;
-      border-radius: 0;
-      display: block;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-    }
-    #fs-frm label,
-    #fs-frm legend,
-    #fs-frm ::placeholder {
-      font-size: .825rem;
-      margin-bottom: .5rem;
-      padding-top: .2rem;
-      display: flex;
-      align-items: baseline;
-    }
-    
-    /* border, padding, margin, width */
-    #fs-frm input,
-    #fs-frm select,
-    #fs-frm textarea,
-    #fs-frm #card-element {
-      border: 1px solid rgba(0,0,0,0.2);
-      background-color: rgba(255,255,255,0.9);
-      padding: .75em 1rem;
-      margin-bottom: 1.5rem;
-    }
-    #fs-frm input:focus,
-    #fs-frm select:focus,
-    #fs-frm textarea:focus {
-      background-color: white;
-      outline-style: solid;
-      outline-width: thin;
-      outline-color: gray;
-      outline-offset: -1px;
-    }
-    #fs-frm [type="text"],
-    #fs-frm [type="email"] {
-      width: 100%;
-    }
-    #fs-frm [type="button"],
-    #fs-frm [type="submit"],
-    #fs-frm [type="reset"] {
-      width: auto;
-      cursor: pointer;
-      -webkit-appearance: button;
-      -moz-appearance: button;
-      appearance: button;
-    }
-    #fs-frm [type="button"]:focus,
-    #fs-frm [type="submit"]:focus,
-    #fs-frm [type="reset"]:focus {
-      outline: none;
-    }
-    #fs-frm [type="submit"],
-    #fs-frm [type="reset"] {
-      margin-bottom: 0;
-    }
-    #fs-frm select {
-      text-transform: none;
-    }
-    
-    #fs-frm [type="checkbox"] {
-      -webkit-appearance: checkbox;
-      -moz-appearance: checkbox;
-      appearance: checkbox;
-      display: inline-block;
-      width: auto;
-      margin: 0 .5em 0 0 !important;
-    }
-    
-    #fs-frm [type="radio"] {
-      -webkit-appearance: radio;
-      -moz-appearance: radio;
-      appearance: radio;
-    }
-    
-    /* address, locale */
-    #fs-frm fieldset.locale input[name="city"],
-    #fs-frm fieldset.locale select[name="state"],
-    #fs-frm fieldset.locale input[name="postal-code"] {
-      display: inline;
-    }
-    #fs-frm fieldset.locale input[name="city"] {
-      width: 52%;
-    }
-    #fs-frm fieldset.locale select[name="state"],
-    #fs-frm fieldset.locale input[name="postal-code"] {
-      width: 20%;
-    }
-    #fs-frm fieldset.locale input[name="city"],
-    #fs-frm fieldset.locale select[name="state"] {
-      margin-right: 3%;
-    }
-    </style>
 
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Contact Us</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="description" content="Learn Programming and Data Science through online mode with opportunity to get Bachelor’s Degree (BSc) or Diploma from IIT Madras upon successfully completing required online courses. First of its kind undergraduate program that leverages the ease of online learning.">
+  <meta content="IITM, IIT Madras, IITMOD, IITM Bsc, IITM online, placement, IITM placement, IITMOD placement" name="keywords">
+  <meta property="og:title" content="IIT Madras Online Degree Program">
+  <meta property="og:description" content="Learn Programming and Data Science through online mode with opportunity to get Bachelor’s Degree (BSc) or Diploma from IIT Madras upon successfully completing required online courses. First of its kind undergraduate program that leverages the ease of online learning.">
+  <meta property="og:image" content="https://onlinedegree.iitm.ac.in/assets/img/socialmedia_card.jpg">
+  <meta property="og:url" content="https://onlinedegree.iitm.ac.in/">
+
 
   <!-- Favicons -->
   <link href="assets/img/iitmlogo.png" rel="icon">
@@ -136,6 +33,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/form.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css">
 
   <!-- =======================================================
   * Template Name: Moderna - v4.8.0
@@ -163,18 +62,19 @@
           
           
           <li><a href="our-students.html">Our Students</a></li>
+          <li><a href="curriculum.html">Curriculum</a></li>
           <li><a href="Training.html">Training</a></li>
-          <!-- <li><a href="curriculum.html">Curriculum</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          
+          <!-- <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="team.html">Team</a></li> -->
           <li><a href="achievements.html">Acheivements</a></li>
 
-          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="contact.html">Contact Us</a></li>
               <li><a href="team.html">Team</a></li>
             </ul>
-          </li>
+          </li> -->
           
               
 
@@ -212,31 +112,7 @@
           <div class="col-lg-6">
 
             <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <h4> Our Contact Details </h4>
-                  <h6>Mr. Balaraju Kondaveeti</h6>
-
-                     <p>Head, Industry Interaction Cell, BSc Degree Program, IIT Madras<br>
-                      balaraju@onlinedegree.iitm.ac.in <br><br>
-                  <h6>Ms. Bharathi</h6>
-                      <p>Head of Operations, BSc Degree Program, IIT Madras
-                      bharathi@onlinedegree.iitm.ac.in
-                      </p><br>
-                  <h6>Prof. Balaji Srinivasan</h6>
-                      <p>Advisor, Internships, BSc Degree Program, IIT Madras
-                      balajis@ee.iitm.ac.in </p>
-
-                    
-                        </p><br>
-                  
-
-<!--                   <i class="bx bx-map"></i>
-                  <h3>Address</h3>
-                  <p>IITM BSc Degree Office, 3rd Floor, ICSR Building,
-                    IIT Madras, Chennai - 600036</p> -->
-                </div>
-              </div>
+              
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-envelope"></i>
@@ -255,14 +131,20 @@
                   <h3>Call Us</h3>
                   <p>+1 5589 55488 55<br>+1 6678 254445 41</p> -->
                 </div>
-              </div>
+              
             </div>
 
           </div>
+        </div>
           
           <div class="col-lg-6">
+
+<!--             <div class="cont-form">
+            <h4>Get in <b>Touch</b></h4><hr> -->
+
             <h3>Get in touch!</h3>
             <hr>
+
             <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xrgjbjkv" method="post">
               <fieldset id="fs-frm-inputs">
                 <label for="full-name"></label>
@@ -272,7 +154,7 @@
                 <label for="email-address"></label>
                 <input type="email" name="_replyto" id="email-address" placeholder="Enter your official email address" required="">
                 <label for="contact-number"></label>
-                <input type="number" name="Contact-Number" id="contact-number" placeholder="Enter your Contact Number" >
+                <input type="tel" name="Contact-Number" id="contact-number" placeholder="Enter your Contact Number" >
                 
                 <label for="company-name"></label>
                 <input type="text" name="company-name" id="company-name" placeholder="Enter the Name of your Company" required="">
@@ -281,44 +163,23 @@
                 
 
                 <label for="message">Leave us a message</label>
-                <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+
+                <textarea rows="5" name="message" id="message" placeholder="Share your plans and proposals here." required=""></textarea>
+
+
                 <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
               </fieldset>
               <input type="submit" value="Submit">
             </form>
-
-
-            <!--script src="https://unpkg.com/formiojs@latest/dist/formio.embed.js?src=https://xoycagcsntvywro.form.io/contactus">
-
-            </script-->
-           <!--iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfw5j43GJjuR5xjgGTo7S2wXfsfUUjPbRm7vjVl_xDQYRhdWA/viewform?embedded=true" width="600" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe-->
-<!--             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form> -->
           </div>
 
-        </div>
+          </div>
+
+        
 
       </div>
+      </div>
+
     </section><!-- End Contact Section -->
 
     <!-- ======= Map Section ======= -->

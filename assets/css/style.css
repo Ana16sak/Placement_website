@@ -121,13 +121,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Open Sans", sans-serif;
-  font-size: 17px;
+  font-size: 1rem;
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
 .navbar a i, .navbar a:focus i {
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 0;
   margin-left: 5px;
 }
@@ -322,12 +322,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 2.9rem;
   font-weight: 700;
 }
 #hero h2 span {
-  margin-bottom: 30px;
-  font-size: 40px;
+  margin-bottom: 0.01rem;
+  font-size: 2.6rem;
 }
 #hero p {
   width: 80%;
@@ -429,10 +429,10 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .section-title h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -460,7 +460,7 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
-  font-sizerem;
+  font-size:1rem;
 }
 
 /*--------------------------------------------------------------
@@ -768,13 +768,13 @@ a.expert-action:hover {
 .skills .progress .skill {
   line-height: 35px;
   padding: 0;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 7px;
   text-transform: uppercase;
 }
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
-  margin: 0 20px 0 0;
+  margin: 0 7px 0 0;
 }
 .skills .progress-bar {
   width: 1px;
