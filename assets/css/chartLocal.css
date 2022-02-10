@@ -35,8 +35,8 @@
 /* ===================== this part is not for charts. I am making counter ========================== */
 
 .stats{
-    background-color: #ffce74;
-    color: rgb(128, 15, 13);
+    background-color: #c7cbcece;
+    color: rgb(172, 16, 13);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
