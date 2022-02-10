@@ -8,12 +8,7 @@ const expec_term_data = {
     datasets: [{
         label: "Expected term of completion of both diplomas",
         data: [196,345,73,41],
-        backgroundColor: [
-            'rgb(208, 0, 0)',
-            'rgb(255, 183, 0)',
-            'rgb(123, 123, 123)',
-            'rgb(74, 146, 70)'
-        ]
+        backgroundColor: 'rgb(208,0,0)'
     }]
 }
 
